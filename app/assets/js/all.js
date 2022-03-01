@@ -1,4 +1,3 @@
-const { event } = require("jquery");
 
 // swiper
 var swiper = new Swiper(".mySwiper", {
@@ -208,8 +207,11 @@ if (elem) {
 }
 
 // 首頁 " 方案選擇 " 三顆(選擇課程)按鈕 click 時連結到 reservation-choose.html 頁面
+
 $(function(){
-  $('.js_indexBtn_click').on('click', function(){
+  const indexBtnClick = document.querySelectorAll('.js_indexBtn_click');
+  $(indexBtnClick).on('click', function(){
     location.href = './reservation-choose.html';
+    console.log(indexBtnClick);
   });
 });
