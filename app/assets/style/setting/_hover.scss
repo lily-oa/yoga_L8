@@ -1,0 +1,59 @@
+//通用hover
+.useHover_1{
+  &:hover {
+    color: $secondary !important;
+    border-bottom: 1px solid $secondary;
+  }
+}
+.useHover_1{
+  border-bottom: 1px solid transparent;
+}
+
+.useHover_2{
+  &:hover{
+    color: darken($light_2, 60%)!important;
+  }
+}
+
+.useHover_3{
+  &:hover{
+    background: $secondary !important;
+    color: #fff !important;
+  }
+}
+
+.useHover_4{  
+  &:hover{
+    background: $primary !important;
+    color: #fff !important;
+    border-radius: 16px !important;
+  }
+}
+
+.activeHover{
+  background: $primary !important;
+  color: #fff !important;
+  border-radius: 16px !important;
+  &:hover{
+    background: $secondary !important;
+    color: $dark_2 !important;
+    border-radius: 16px !important;
+  }
+}
+
+.useHover_dark{
+  &:hover{
+    color: $dark_2!important;
+  }
+}
+
+//hover陰影動畫
+.border-button {
+  box-shadow: 0px 0px 0px .5px $primary;
+  transition: box-shadow 0.6s linear;
+  margin: 0.5em; /* Increased margin since the box-shado expands outside the element, like outline */
+}
+
+.border-button:hover { 
+  box-shadow: 0px 0px 0px 10px $primary; 
+}

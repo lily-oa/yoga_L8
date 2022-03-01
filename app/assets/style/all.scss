@@ -1,0 +1,21 @@
+/*-- 老師給的和自設的設定檔 --*/
+@import "helpers/bootstrap.scss";
+/*-- setting --*/
+@import "setting/base";
+@import "setting/util";
+@import "setting/hover";
+/*-- components --*/
+@import "components/swiper";
+@import "components/scrollbar";
+@import "components/table";
+@import "components/datepicker";
+@import "components/arrow";
+/*-- vendors --*/
+@import "vendors/swiper";
+@import "vendors/datepicker";
+@import "vendors/hover.css/hover";
+/*-- layout --*/
+@import "layout/icon";
+@import "layout/footer";
+/*-- pages --*/
+@import "pages/index";

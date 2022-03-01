@@ -1,0 +1,24 @@
+
+.primary{
+  color: $primary;
+}
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: $primary;
+}
+
+.form-control{
+  color: $primary;
+  border: 1px solid $primary;
+}
+
+.dow, .day{
+  color: $secondary;
+}
+
+.next, .pre{
+  color: $primary !important;
+}
+
+.datepicker-picker{
+  border: 1px solid $primary !important;
+}

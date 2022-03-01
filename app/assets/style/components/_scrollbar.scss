@@ -1,0 +1,16 @@
+/*------水平捲軸------*/
+
+.scrollbar-w{
+  &::-webkit-scrollbar{
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: rgba($primary, .8);
+  }
+  &::-webkit-scrollbar-track{
+    border-radius: 3px;
+    box-shadow: 0 0 10px $light;
+  }
+}
+

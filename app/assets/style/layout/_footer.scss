@@ -1,0 +1,15 @@
+/* footer 現在訂閱，獲得課程優惠碼！*/
+.interButton{
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+  }
+}
+
+.fIcon{
+  width: 24px;
+  height: 24px;
+}

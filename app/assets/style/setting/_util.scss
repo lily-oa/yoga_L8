@@ -1,0 +1,54 @@
+/*  設定  */
+// 背景圖
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+//img用
+.object-fit-cover {
+  object-fit: cover;
+  object-position: bottom; //定位在下方
+}
+
+.object-fit-cover_2 {
+  object-fit: cover;
+}
+
+.object-fit-cover_3 {
+  object-fit: cover;
+  object-position: 50% 35%; //定位在正中央
+}
+
+//line-height 對齊用
+.lh-0{
+  line-height: 0;
+}
+
+
+//特殊顏色
+.specilColor{
+  color: darken($white, 10%)!important;
+}
+
+//字型
+.font_carlmarx{
+  font-family: carlmarx, sans-serif;
+}
+
+
+// 自己嘗試新增height的通用類別
+// 一個檔案只可以有一個key --> "height"，所以要寫在自己的檔案
+// $utilities: map-merge(
+//   $utilities,(
+//     "height": map-merge(
+//       map-get($utilities, "height"),(
+//         responsive: true,
+//         values:(
+//           $imgSizes
+//         ),
+//       ),
+//     ),
+//   ),
+// );

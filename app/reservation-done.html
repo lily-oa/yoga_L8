@@ -1,0 +1,73 @@
+---
+title: reservation-write.html 填寫資料
+layout: ./app/layout.ejs
+engine: ejs
+current: reservation-write
+---
+
+<!--立即預約-->
+<div class="container">
+  <section class="pt-12 pt-md-16">
+    <h1 class="fz-7 text-primary text-center mb-6 mb-md-4">立即預約</h1>
+    <ul class="row g-0 gap-4 justify-content-md-center mb-8">
+      <li id="step-1" class="col col-md-2 rounded-16 bg-light_2"><a href="./reservation-choose.html"
+          class="py-3 px-5 px-md-3 px-lg-11 text-center useHover_4">選擇方案</a></li>
+      <li id="step-2" class="col col-md-2 rounded-16 bg-light_2"><a href="./reservation-write.html"
+          class="py-3 px-5 px-md-3 px-lg-11 text-center useHover_4">填寫資料</a></li>
+      <li id="step-3" class="col col-md-2 rounded-16 bg-light_2"><a href="./reservation-done.html"
+          class="py-3 px-5 px-md-3 px-lg-11 text-center activeHover">完成預約</a></li>
+    </ul>
+  </section>
+</div>
+
+<!--完成預約-done-->
+<div class="container">
+  <section>
+    <div class="text-center mb-5">
+      <i class="far fa-check-circle fa-3x text-primary"></i>
+    </div>
+    <p class="fz-5 text-center text-primary mb-8">已完成預約，以下是您的預約資訊:</p>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <!--手風琴元件-->
+        <div class="mb-6">
+          <div class="accordion" id="accordionDone">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button bg-primary text-white useHover_3 z-index-1" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  預約資訊
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionDone">
+                <div class="accordion-body text-primary">
+                  <p class="mb-4">您預約的是 <span class="text-secondary fz-5">首次體驗課程-基礎</span></p>
+                  <ul>
+                    <li class="mb-2">上課預約報到日：2021/07/21</li>
+                    <li class="mb-2">預約人：Joanne Chen</li>
+                    <li class="mb-2">年齡：18 歲</li>
+                    <li class="mb-2">性別：女</li>
+                    <li class="mb-2">電子信箱：example123@gmail.com</li>
+                    <li>手機號碼：0912-345-678</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--手風琴元件end-->
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-9">
+            <h5 class="text-primary text-center mb-2">上課注意事項</h5>
+            <p class="text-primary mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <div class="mb-22 mb-md-20 mb-lg-26">
+              <a href="./index.html" class="btn btn-secondary text-white w-100">返回首頁</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
