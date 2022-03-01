@@ -1,9 +1,6 @@
 "use strict";
 
-var _require = require("jquery"),
-    event = _require.event; // swiper
-
-
+// swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1.5,
   spaceBetween: 30,
@@ -218,8 +215,10 @@ if (elem) {
 
 
 $(function () {
-  $('.js_indexBtn_click').on('click', function () {
+  var indexBtnClick = document.querySelectorAll('.js_indexBtn_click');
+  $(indexBtnClick).on('click', function () {
     location.href = './reservation-choose.html';
+    console.log(indexBtnClick);
   });
 });
 "use strict";
