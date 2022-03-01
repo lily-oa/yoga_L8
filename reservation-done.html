@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>reservation-write.html 填寫資料</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <!--adobe字體-->
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'xsj2kjv',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <!--icon-->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!--swiper @7 css-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--日期外掛-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <!--動畫-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--內部-->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light_2">
+  <div class="container">
+    <!--logo-->
+    <a class="navbar-brand font_carlmarx text-secondary fz-8 useHover_dark" href="./index.html">DOYOGA</a>
+    <!--漢堡選單-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="material-icons material-icons-round text-primary">reorder</span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-center flex-grow-1" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item me-lg-8">
+          <a class="nav-link text-dark_2 useHover_1 text-center" aria-current="page" href="./course.html">課程介紹</a>
+        </li>
+        <li class="nav-item me-lg-8">
+          <a class="nav-link text-dark_2 useHover_1 text-center" href="./surroundings.html">瑜珈空間</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark_2 useHover_1 text-center" href="./curriculum.html">當月課表</a>
+        </li>
+      </ul>
+      <!--mobile版-->
+      <div class="d-flex d-block d-lg-none justify-content-center">
+        <a class="btn btn-outline-primary rounded-pill me-4" type="submit" href="./reservation-choose.html">立即預約</a>
+        <a class="btn btn-outline-primary ms-lg-4 rounded-pill" type="submit" href="./contactUs.html">聯絡我們</a>
+      </div>
+    </div>
+    <!--pc版-->
+    <div class="d-flex d-none d-lg-block">
+      <a class="btn btn-outline-primary rounded-pill" type="submit" href="./reservation-choose.html">立即預約</a>
+      <a class="btn btn-outline-primary ms-lg-4 rounded-pill" type="submit" href="./contactUs.html">聯絡我們</a>
+    </div>
+  </div>
+</nav>
+
+  <!--滾動icon-->
+<ul class="run_icon text-primary position-fixed top-50 end-0 text-center d-none d-lg-block">
+  <li class="mb-2"><a href="https://zh-tw.facebook.com/facebook/" class="useHover_2 text-secondary"><i class="fab fa-facebook fa-3x"></i></a></li>
+  <li class="mb-2"><a href="https://business.instagram.com/getting-started?locale=zh_TW" class="useHover_2 text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
+  <li><a href="https://linecorp.com/zh-hant/" class="useHover_2 text-secondary"><i class="fab fa-instagram fa-3x"></i></a></li>
+</ul>
+
+  
+<!--立即預約-->
+<div class="container">
+  <section class="pt-12 pt-md-16">
+    <h1 class="fz-7 text-primary text-center mb-6 mb-md-4">立即預約</h1>
+    <ul class="row g-0 gap-4 justify-content-md-center mb-8">
+      <li id="step-1" class="col col-md-2 rounded-16 bg-light_2"><a href="./reservation-choose.html"
+          class="py-3 px-5 px-md-3 px-lg-11 text-center useHover_4">選擇方案</a></li>
+      <li id="step-2" class="col col-md-2 rounded-16 bg-light_2"><a href="./reservation-write.html"
+          class="py-3 px-5 px-md-3 px-lg-11 text-center useHover_4">填寫資料</a></li>
+      <li id="step-3" class="col col-md-2 rounded-16 bg-light_2"><a href="./reservation-done.html"
+          class="py-3 px-5 px-md-3 px-lg-11 text-center activeHover">完成預約</a></li>
+    </ul>
+  </section>
+</div>
+
+<!--完成預約-done-->
+<div class="container">
+  <section>
+    <div class="text-center mb-5">
+      <i class="far fa-check-circle fa-3x text-primary"></i>
+    </div>
+    <p class="fz-5 text-center text-primary mb-8">已完成預約，以下是您的預約資訊:</p>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <!--手風琴元件-->
+        <div class="mb-6">
+          <div class="accordion" id="accordionDone">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button bg-primary text-white useHover_3 z-index-1" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  預約資訊
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionDone">
+                <div class="accordion-body text-primary">
+                  <p class="mb-4">您預約的是 <span class="text-secondary fz-5">首次體驗課程-基礎</span></p>
+                  <ul>
+                    <li class="mb-2">上課預約報到日：2021/07/21</li>
+                    <li class="mb-2">預約人：Joanne Chen</li>
+                    <li class="mb-2">年齡：18 歲</li>
+                    <li class="mb-2">性別：女</li>
+                    <li class="mb-2">電子信箱：example123@gmail.com</li>
+                    <li>手機號碼：0912-345-678</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--手風琴元件end-->
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-9">
+            <h5 class="text-primary text-center mb-2">上課注意事項</h5>
+            <p class="text-primary mb-8">第一次上課請提前 10-15 分鐘至櫃檯報到，請攜帶毛巾、水 .穿著運動服、乾淨室內運動鞋。 如欲更改體驗時間請提前通知我們喔！</p>
+            <div class="mb-22 mb-md-20 mb-lg-26">
+              <a href="./index.html" class="btn btn-secondary text-white w-100">返回首頁</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!--footer 現在訂閱，獲得課程優惠碼！-->
+<footer class="bg-primary pt-6 pt-md-8 pb-8">
+  <div class="container">
+    <div class="row d-block d-lg-none">
+      <div class="col-md-7">
+        <h4 class="text-white text-md-start fz-md-7 mb-2">現在訂閱，獲得課程優惠碼！</h4>
+        <div class="input-group mb-3 interButton">
+          <input 
+            type="email" 
+            name="Email" 
+            id="subscriptionEmail"
+            class="form-control text-secondary js-subscription-email" 
+            placeholder="輸入您的電子信箱" 
+            aria-label="輸入您的電子信箱"
+            aria-describedby="訂閱信箱"
+          >
+          <button class="btn btn-secondary text-white js-subscription-btn border-0" type="button">
+            訂閱
+          </button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="js-subscription-email-msg validate-msg validate-msg-white text-danger text-start fz-4">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-none d-lg-block d-lg-flex justify-content-lg-between align-items-center">
+      <div class="col-lg-4">
+        <h4 class="text-white fz-lg-5">現在訂閱，獲得課程優惠碼！</h4>
+      </div>
+      <div class="col-lg-4">
+        <div class="input-group">
+          <input 
+            type="email" 
+            name="Email" 
+            id="subscriptionEmail"
+            class="form-control text-secondary js-subscription-email" 
+            placeholder="輸入您的電子信箱" 
+            aria-label="輸入您的電子信箱"
+            aria-describedby="訂閱信箱"
+          >
+          <button class="btn btn-secondary text-white js-subscription-btn border-0" type="button" disabled>
+            訂閱
+          </button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="js-subscription-email-msg validate-msg validate-msg-white text-danger text-start fz-4">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border border-white my-6 my-md-8"></div>
+
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-flex-start">
+      <a href="./index.html">
+        <h4 class="text-white fw-bolder useHover_2 mb-md-3">DOYOGA</h4>
+      </a>
+      <div class="d-flex">
+        <li class="mb-2"><a href="https://zh-tw.facebook.com/facebook/" class="useHover_2 text-white"><i
+              class="fab fa-facebook fIcon"></i></a></li>
+        <li class="mb-2"><a href="https://business.instagram.com/getting-started?locale=zh_TW"
+            class="useHover_2 text-white"><i class="fab fa-line fIcon"></i></a></li>
+        <li><a href="https://linecorp.com/zh-hant/" class="useHover_2 text-white"><i
+              class="fab fa-instagram fIcon"></i></a></li>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="col-md-2">
+        <li class="mb-2"><a href="./course.html" class="text-white useHover_2">課程介紹</a></li>
+        <li class="mb-2"><a href="./surroundings.html" class="text-white useHover_2">瑜珈空間</a></li>
+        <li class="mb-2 mb-md-0"><a href="./curriculum.html" class="text-white useHover_2">當月課表</a></li>
+      </ul>
+      <div class="d-block d-md-none">
+        <p class="text-white">
+          © 2021. All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-md-9 position-relative d-none d-md-block">
+        <p class="text-white text-center position-absolute top-100 start-50 translate-middle">
+          © 2021. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 100,
+      once: true,
+    });
+  </script>
+  <!--日期外掛-->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+  <!--swiper @7 js-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--jquery chrome-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

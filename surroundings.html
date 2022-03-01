@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>surroundings.html 瑜珈空間</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <!--adobe字體-->
+  <script>
+    (function (d) {
+      var config = {
+          kitId: 'xsj2kjv',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <!--icon-->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!--swiper @7 css-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--日期外掛-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <!--動畫-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--內部-->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+  <!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light_2">
+  <div class="container">
+    <!--logo-->
+    <a class="navbar-brand font_carlmarx text-secondary fz-8 useHover_dark" href="./index.html">DOYOGA</a>
+    <!--漢堡選單-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="material-icons material-icons-round text-primary">reorder</span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-md-center flex-grow-1" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item me-lg-8">
+          <a class="nav-link text-dark_2 useHover_1 text-center" aria-current="page" href="./course.html">課程介紹</a>
+        </li>
+        <li class="nav-item me-lg-8">
+          <a class="nav-link text-dark_2 useHover_1 text-center" href="./surroundings.html">瑜珈空間</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark_2 useHover_1 text-center" href="./curriculum.html">當月課表</a>
+        </li>
+      </ul>
+      <!--mobile版-->
+      <div class="d-flex d-block d-lg-none justify-content-center">
+        <a class="btn btn-outline-primary rounded-pill me-4" type="submit" href="./reservation-choose.html">立即預約</a>
+        <a class="btn btn-outline-primary ms-lg-4 rounded-pill" type="submit" href="./contactUs.html">聯絡我們</a>
+      </div>
+    </div>
+    <!--pc版-->
+    <div class="d-flex d-none d-lg-block">
+      <a class="btn btn-outline-primary rounded-pill" type="submit" href="./reservation-choose.html">立即預約</a>
+      <a class="btn btn-outline-primary ms-lg-4 rounded-pill" type="submit" href="./contactUs.html">聯絡我們</a>
+    </div>
+  </div>
+</nav>
+
+  <!--滾動icon-->
+<ul class="run_icon text-primary position-fixed top-50 end-0 text-center d-none d-lg-block">
+  <li class="mb-2"><a href="https://zh-tw.facebook.com/facebook/" class="useHover_2 text-secondary"><i class="fab fa-facebook fa-3x"></i></a></li>
+  <li class="mb-2"><a href="https://business.instagram.com/getting-started?locale=zh_TW" class="useHover_2 text-secondary"><i class="fab fa-line fa-3x"></i></a></li>
+  <li><a href="https://linecorp.com/zh-hant/" class="useHover_2 text-secondary"><i class="fab fa-instagram fa-3x"></i></a></li>
+</ul>
+
+  
+<!--瑜珈空間-->
+<div class="container">
+  <section class="pt-12 pt-md-16 pb-10 pb-md-0">
+    <h1 class="fz-7 text-center text-primary mb-6 mb-md-8">瑜珈空間</h1>
+    <div class="row">
+      <!--圖片-->
+      <div class="col-12 col-md-8">
+        <!--第一排圖片-->
+        <div class="row">
+          <div class="col-12">
+            <div class="card bg-dark text-white border-0 mb-4 mb-lg-6">
+              <div class="h-x3.5 h-md-x2.16 h-lg-x3.5">
+                <img class="card-img h-100 object-fit-cover_3"
+                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/blue%20swimming%20pool%20near%20green%20potted%20plant.jpg?raw=true"
+                  alt="休息室">
+              </div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h5 class="card-title">A、B 團體課教室</h5>
+                <p class="card-text">教授課程：A-基礎、艾揚格、哈達、寰宇；B-雙人飛行、阿斯坦加、陰陽、香氛</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--第二排圖片-->
+        <div class="row">
+          <!--1-->
+          <div class="col-12 col-md-6">
+            <div class="card bg-dark text-white border-0 mb-4 mb-lg-6">
+              <div class="h-x3.5 h-md-x2.1 h-lg-x3.5"> 
+                <img class="card-img h-100 object-fit-cover_3"
+                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/carl-barcelo-nqUHQkuVj3c-unsplash.jpg?raw=true"
+                  alt="試範照">
+              </div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h5 class="card-title">C、D 個人訓練室</h5>
+                <p class="card-text">開放時間：每週一至週五 09:00~17:00</p>
+              </div>
+            </div>
+          </div>
+          <!--2-->
+          <div class="col-12 col-md-6">
+            <div class="card bg-dark text-white border-0 mb-4 mb-lg-6">
+              <div class="h-x3.5 h-md-x2.1 h-lg-x3.5">
+                <img class="card-img h-100 object-fit-cover_3"
+                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/white%20ceramic%20sink%20near%20white%20ceramic%20sink.jpg?raw=true"
+                  alt="試範照">
+              </div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h5 class="card-title">淋浴間</h5>
+                <p class="card-text">開放時間：每週一至週日 09:00~21:30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--第三排圖片-->
+        <div class="row mb-md-10 mb-lg-16">
+          <!--1-->
+          <div class="col-12 col-md-6">
+            <div class="card bg-dark text-white border-0 mb-8 mb-md-0">
+              <div class="h-x3.5 h-md-x2.1 h-lg-x3.5">
+                <img class="card-img h-100 object-fit-cover_3"
+                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20blue%20denim%20jeans%20doing%20yoga.jpg?raw=true"
+                  alt="環境照">
+              </div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h5 class="card-title">交誼廳</h5>
+                <p class="card-text">開放時間：每週一至週五 09:00~21:30</p>
+              </div>
+            </div>
+          </div>
+          <!--2-->
+          <div class="col-12 col-md-6">
+            <div class="card bg-dark text-white border-0 mb-8 mb-md-0">
+              <div class="h-x3.5 h-md-x2.1 h-lg-x3.5">
+                <img class="card-img h-100 object-fit-cover_3"
+                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/sittin%20people%20beside%20table%20inside%20room.jpg?raw=true"
+                  alt="環境照">
+              </div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end">
+                <h5 class="card-title">交誼廳</h5>
+                <p class="card-text">開放時間：每週一至週五 09:00~21:30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--文字-->
+      <div class="col-12 col-md-4">
+        <div class="py-8 py-md-4 py-lg-8 px-7-half px-md-4 px-lg-8 bg-light_2 text-primary rounded-16">
+          <h5 class="mb-4">DOYOGA 提供：</h5>
+          <p class="mb-1">四間教室：A、B 團體課教室、C、D 個人訓練室。</p>
+          <p class="mb-1">瑜珈墊、輔具：每次課後會進行殺菌清潔，乾淨免擔心。</p>
+          <p class="mb-1">男女置物櫃、淋浴間：分別設置在館內 A、B 區。</p>
+          <p class="mb-1">舒適交誼廳，咖啡茶水無限供應，假日提供午間蔬食餐點。</p>
+          <div class="d-flex">
+            <p class="me-3">立即預約</p>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--課程推薦-->
+<section class="bg-light_2 pt-10 pt-md-8 pt-lg-10 pb-12 pb-md-13 pb-lg-14">
+  <div class="container">
+    <h3 class="text-primary text-center mb-8 mb-md-6 mb-lg-8">課程推薦</h3>
+    <div class="swiper js-swiper-courses-recommend overflow-visible">
+      <div class="swiper-wrapper align-items-center">
+        <!--1-->
+        <div class="swiper-slide h-auto d-flex flex-column">
+          <img 
+          class="d-block w-100 h-x1.96 object-fit-cover_2 rounded-16 mb-2"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20doing%20yoga%20beside%20wall.jpg?raw=true" alt="試範照片">
+          <div class="card border-0">
+            <div class="card-body text-primary bg-light_2 p-0">
+              <h5 class="card-title">基礎 Basic</h5>
+              <p class="card-text">授課老師：Carol Tang</p>
+            </div>
+          </div>
+        </div>
+        <!--2-->
+        <div class="swiper-slide h-auto d-flex flex-column">
+          <img 
+          class="d-block w-100 h-x1.96 object-fit-cover_2 rounded-16 mb-2"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg?raw=true" alt="試範照片">
+          <div class="card border-0">
+            <div class="card-body text-primary bg-light_2 p-0">
+              <h5 class="card-title">艾揚格 Iyengar</h5>
+              <p class="card-text">授課老師：Kanae</p>
+            </div>
+          </div>
+        </div>
+        <!--3-->
+        <div class="swiper-slide h-auto d-flex flex-column">
+          <img 
+          class="d-block w-100 h-x1.96 object-fit-cover_2 rounded-16 mb-2"
+          src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/woman%20in%20black%20sports%20bra%20and%20black%20leggings%20doing%20yoga.jpg?raw=true" alt="試範照片">
+          <div class="card border-0">
+            <div class="card-body text-primary bg-light_2 p-0">
+              <h5 class="card-title">哈達 Hatha</h5>
+              <p class="card-text">授課老師：Kuzuha</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--footer 現在訂閱，獲得課程優惠碼！-->
+<footer class="bg-primary pt-6 pt-md-8 pb-8">
+  <div class="container">
+    <div class="row d-block d-lg-none">
+      <div class="col-md-7">
+        <h4 class="text-white text-md-start fz-md-7 mb-2">現在訂閱，獲得課程優惠碼！</h4>
+        <div class="input-group mb-3 interButton">
+          <input 
+            type="email" 
+            name="Email" 
+            id="subscriptionEmail"
+            class="form-control text-secondary js-subscription-email" 
+            placeholder="輸入您的電子信箱" 
+            aria-label="輸入您的電子信箱"
+            aria-describedby="訂閱信箱"
+          >
+          <button class="btn btn-secondary text-white js-subscription-btn border-0" type="button">
+            訂閱
+          </button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="js-subscription-email-msg validate-msg validate-msg-white text-danger text-start fz-4">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-none d-lg-block d-lg-flex justify-content-lg-between align-items-center">
+      <div class="col-lg-4">
+        <h4 class="text-white fz-lg-5">現在訂閱，獲得課程優惠碼！</h4>
+      </div>
+      <div class="col-lg-4">
+        <div class="input-group">
+          <input 
+            type="email" 
+            name="Email" 
+            id="subscriptionEmail"
+            class="form-control text-secondary js-subscription-email" 
+            placeholder="輸入您的電子信箱" 
+            aria-label="輸入您的電子信箱"
+            aria-describedby="訂閱信箱"
+          >
+          <button class="btn btn-secondary text-white js-subscription-btn border-0" type="button" disabled>
+            訂閱
+          </button>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="js-subscription-email-msg validate-msg validate-msg-white text-danger text-start fz-4">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border border-white my-6 my-md-8"></div>
+
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-flex-start">
+      <a href="./index.html">
+        <h4 class="text-white fw-bolder useHover_2 mb-md-3">DOYOGA</h4>
+      </a>
+      <div class="d-flex">
+        <li class="mb-2"><a href="https://zh-tw.facebook.com/facebook/" class="useHover_2 text-white"><i
+              class="fab fa-facebook fIcon"></i></a></li>
+        <li class="mb-2"><a href="https://business.instagram.com/getting-started?locale=zh_TW"
+            class="useHover_2 text-white"><i class="fab fa-line fIcon"></i></a></li>
+        <li><a href="https://linecorp.com/zh-hant/" class="useHover_2 text-white"><i
+              class="fab fa-instagram fIcon"></i></a></li>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="col-md-2">
+        <li class="mb-2"><a href="./course.html" class="text-white useHover_2">課程介紹</a></li>
+        <li class="mb-2"><a href="./surroundings.html" class="text-white useHover_2">瑜珈空間</a></li>
+        <li class="mb-2 mb-md-0"><a href="./curriculum.html" class="text-white useHover_2">當月課表</a></li>
+      </ul>
+      <div class="d-block d-md-none">
+        <p class="text-white">
+          © 2021. All Rights Reserved.
+        </p>
+      </div>
+      <div class="col-md-9 position-relative d-none d-md-block">
+        <p class="text-white text-center position-absolute top-100 start-50 translate-middle">
+          © 2021. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 100,
+      once: true,
+    });
+  </script>
+  <!--日期外掛-->
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+  <!--swiper @7 js-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!--jquery chrome-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
